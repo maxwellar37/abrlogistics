@@ -24,6 +24,7 @@ $(function () {
                     _template:'table',
                     _subject: 'New Enquiry from ABR Website',
                     _cc:'ansarithameem674@gmail.com',
+                    _captcha:false,
                     message: message
                 },
                 cache: false,
