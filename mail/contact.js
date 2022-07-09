@@ -23,7 +23,7 @@ $(function () {
                     subject: subject,
                     _template:'table',
                     _subject: 'New Enquiry from ABR Website',
-                    _cc:'ansarithameem674@gmail.com',
+                    _cc:'abusid7@gmail.com',
                     _captcha:'false',
                     message: message
                 },
