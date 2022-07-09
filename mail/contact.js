@@ -21,6 +21,9 @@ $(function () {
                     name: name,
                     email: email,
                     subject: subject,
+                    _template:_template,
+                    _subject: subject,
+                    _cc:_cc,
                     message: message
                 },
                 cache: false,
