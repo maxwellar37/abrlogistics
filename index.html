@@ -33,7 +33,7 @@
 
 <body>
     <!-- Topbar Start -->
-    <div class="container-fluid bg-dark">
+    <div id="top" class="container-fluid bg-dark">
         <div class="row py-2 px-lg-5">
             <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center text-white">
@@ -59,7 +59,7 @@
             <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav m-auto py-0">
                     <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="#About" class="nav-item nav-link">About</a>
+                    <a href="#About" id="aboutscroll" class="nav-item nav-link">About</a>
                     <a href="#Contact" class="nav-item nav-link">Contact</a>
                 </div>
             </div>
@@ -171,7 +171,7 @@
                         <h6 class="text-white font-weight-medium m-0">Land Transport</h6>
                     </div>
                     <p>Smooth transport of goods is a good basis for a solid business performance.</p>
-                </div>
+                </div>    <div id="cont"></div>
                 <div class="col-lg-3 col-md-6 text-center mb-5">
                     <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
                         <i class="fa fa-2x fa-store text-dark pr-3"></i>
@@ -181,7 +181,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
     <!-- Services End -->
 
 
@@ -255,9 +255,9 @@
                     <div class="col-md-6 mb-5">
                         <h3 class="text-primary mb-4">Quick Links</h3>
                         <div class="d-flex flex-column justify-content-start">
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                            <a class="text-white mb-2" href="#top"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-white mb-2" href="#About"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                            <a class="text-white" href="#cont"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
                         </div>
                     </div>
                 </div>
@@ -285,6 +285,18 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                console.log("hello")
+        
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+            </script>
 </body>
 
 </html>
