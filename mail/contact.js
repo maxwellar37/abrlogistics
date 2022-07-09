@@ -21,9 +21,9 @@ $(function () {
                     name: name,
                     email: email,
                     subject: subject,
-                    _template:_template,
-                    _subject: subject,
-                    _cc:_cc,
+                    _template:'table',
+                    _subject: 'New Enquiry from ABR Website',
+                    _cc:'ansarithameem674@gmail.com',
                     message: message
                 },
                 cache: false,
