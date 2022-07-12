@@ -15,7 +15,7 @@ $(function () {
             $this.prop("disabled", true);
 
             $.ajax({
-                url: "https://formsubmit.co/support@abrlogistics.org",
+                url: "https://formsubmit.co/docs@abrlogistics.org",
                 type: "POST",
                 data: {
                     name: name,
